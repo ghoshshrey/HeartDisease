@@ -31,13 +31,14 @@ and ST slope. Click **Predict** to display the model's high- or low-risk result.
 | File | Purpose |
 | --- | --- |
 | `app.py` | Streamlit interface and prediction pipeline |
+| `HeartdiseaseFinal.ipynb` | Data analysis, model training, and evaluation notebook |
 | `knn_heart_model.pkl` | Saved K-nearest neighbors classifier |
 | `heart_scaler.pkl` | Saved feature scaler |
 | `heart_columns.pkl` | Expected model input columns |
 | `requirements.txt` | Python dependencies |
 
-The repository contains the saved prediction artifacts; training code and the
-original dataset are not included.
+The training notebook expects `heart.csv` in its working directory. The dataset
+is not included; the Streamlit app uses the bundled saved prediction artifacts.
 
 Loading these artifacts with a different scikit-learn version may produce a
 version warning. Use the pinned version when setting up a new environment.
